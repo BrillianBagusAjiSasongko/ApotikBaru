@@ -1,114 +1,33 @@
+<script>
+export default{
+    name: 'SideBar',
+}
+</script>
+
 <template>
-    <div class="container">
-        <div class="sidebar">
-            <div class="header">
-                <div class="list">
-                    <span class="headdesc">Apotik Sayang</span>
+    <div>
+        <div class="min-h-screen flex bg-[#eeeeee] p-0 m-0">
+            <div class="bg-[#0ea5e9] flex flex-col w-64 p-6 box-border">
+                <div class="flex flex-row text-center py-[12px] px-[10px] rounded-lg h-10 box-border">
+                    <span class="not-italic font-bold text-[18px] leading-4 text-center text-black">Apotik Sayang</span>
                 </div>
-            </div>
-            <div class="main">
-                <div class="list">
-                    <a href="#">
-                        <span class="description">Dashboard</span>
-                    </a>
-                    <a href="#">
-                        <span class="description">Karyawan</span>
-                    </a>
-                    <a href="#">
-                        <span class="description">Data Obat</span>
-                    </a>
-                    <a href="#">
-                        <span class="description">Transaksi</span>
-                    </a>
-                    <a href="#">
-                        <span class="description bg-indigo-500 opacity-100">Contact And About</span>
-                    </a>
+                <div class="flex flex-col">
+                    <a class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-[#eeeeee] hover:text-black" href="#">Dashboard</a>
+                    <a class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-[#eeeeee] hover:text-black" href="#">Karyawan</a>
+                    <a class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-[#eeeeee] hover:text-black" href="#">Data Obat</a>
+                    <a class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-[#eeeeee] hover:text-black" href="#">Transaksi</a>
+                    <a class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-[#eeeeee] hover:text-black" href="#">Contact And About</a>
                 </div>
             </div>
         </div>
     </div>
 </template>
-
-<script>
-export default{
-    name: 'SideBar'
-}
-</script>
-
+  
 <style>
 @import url(https://fonts.google.com/specimen/Ubuntu);
-
 *{
     font-family: Ubuntu;
     padding: 0;
     margin: 0;
-}
-
-.container{
-    display: flex;
-    min-height: 100vh;
-    background-color: #eeeeee;
-}
-
-.sidebar{
-    background-color: #111827;
-    flex-direction: row;
-    width: 260px;
-    padding: 24px;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-
-.sidebar a{
-    text-decoration: none;
-    flex-direction: row;
-    text-align: left;
-    padding: 12px 10px;
-    border-radius: 8px;
-    width: 212px;
-    box-sizing: border-box;
-    transition: all ease-in .1s;
-}
-
-.sidebar a:hover{
-    background-color: #ff9900;
-    transition: all ease-in .1s
-}
-
-.sidebar .header .list{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding: 12px 10px;
-    border-radius: 8px;
-    height: 40px;
-    box-sizing: border-box;
-}
-
-.sidebar .headdesc{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-}
-.sidebar .main .list .description{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.sidebar .main .list .icon{
-    margin-right: 12px;
-}
-.sidebar .main .list{
-    display: flex;
-    flex-direction: column;
-    
 }
 </style>
