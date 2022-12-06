@@ -6,6 +6,7 @@ specifiers:
   autoprefixer: ^10.4.13
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
+  flowbite: ^1.5.4
   pinia: ^2.0.23
   postcss: ^8.4.19
   sass: ^1.32.7
@@ -16,6 +17,7 @@ specifiers:
   vue-router: ^4.1.5
 
 dependencies:
+  flowbite: 1.5.4
   pinia: 2.0.25_vue@3.2.45
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
@@ -435,6 +437,10 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
+
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
 
   /@vitejs/plugin-vue-jsx/2.1.1_vite@3.2.4+vue@3.2.45:
     resolution: {integrity: sha512-JgDhxstQlwnHBvZ1BSnU5mbmyQ14/t5JhREc6YH5kWyu2QdAAOsLF6xgHoIWarj8tddaiwFrNzLbWJPudpXKYA==}
@@ -1257,6 +1263,13 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
+  /flowbite/1.5.4:
+    resolution: {integrity: sha512-A4VTeJE+aHSbwrMzWvpTADhNgX8Njpb3DqRL26pFkOupklPg8cmNstZK8cXrFnBPxomOiX/OazZnhQM1BIZADQ==}
+    dependencies:
+      '@popperjs/core': 2.11.6
+      mini-svg-data-uri: 1.4.4
+    dev: false
+
   /fraction.js/4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
@@ -1509,6 +1522,11 @@ packages:
       braces: 3.0.2
       picomatch: 2.3.1
     dev: true
+
+  /mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
+    dev: false
 
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}

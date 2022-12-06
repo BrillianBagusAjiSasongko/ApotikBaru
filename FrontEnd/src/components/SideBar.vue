@@ -1,7 +1,5 @@
-<script>
-export default{
-    name: 'SideBar',
-}
+<script setup>
+//import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
