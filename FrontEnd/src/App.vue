@@ -1,33 +1,20 @@
-<template>
-  <nav>
-    <div class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-      <router-link to="">Owner</router-link> |
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-  </nav>
-  <router-view/>
-</template>
+<script>
+//import SideBarVue from './components/SideBar.vue';
+import DataObatVue from './components/DataObat.vue';
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default{
+  name: 'AppBar',
+  components:{
+    DataObatVue,
   }
 }
-</style>
+</script>
+
+<template>
+  <nav>
+    <div>
+
+      <DataObatVue/>
+    </div>
+  </nav>
+</template>
