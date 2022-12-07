@@ -1,6 +1,9 @@
 <template>
     <div class="mainapp">
-        <SideBar />
+        <div class="flex">
+            <SideBar />
+            <router-view/>
+        </div>
     </div>
 </template>
 

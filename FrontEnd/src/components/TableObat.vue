@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-    <div class="p-4">
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="table-auto text-left text-sm text-gray-500">
+    <div>
+        <div class="fixed overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="table-auto w-full text-center text-sm text-gray-500">
                 <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="py-3 px-6">No</th>

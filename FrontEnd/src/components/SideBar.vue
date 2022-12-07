@@ -1,5 +1,5 @@
 <script>
-export
+
 </script>
 
 <template>
@@ -10,7 +10,7 @@ export
                     <span class="not-italic font-bold text-[18px] leading-4 text-center text-black">Apotik Sayang</span>
                 </div>
                 <div class="flex flex-col" >
-                    <RouterLink to="/" active-class="ac">
+                    <RouterLink to="/loginpage" active-class="active">
                     <div class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-[#eeeeee] hover:text-black active:bg-[#eeeeee] active:text-black focus:outline-none">
                         Dashboard
                     </div></RouterLink>
