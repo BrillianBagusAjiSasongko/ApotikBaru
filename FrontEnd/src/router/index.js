@@ -22,6 +22,7 @@ const router = createRouter({
       children: [
         {
           path: '/dashboardpage',
+          path: '/mainapp',
           name: 'dashboardpage',
           component: DashboardPage,
         },
