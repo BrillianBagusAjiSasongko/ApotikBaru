@@ -1,21 +1,18 @@
 <template>
     <div class="transaksipage">
-        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, delectus, iure dolor repellat
-            deserunt cupiditate architecto quam, odio earum aperiam aut vitae molestiae nam perspiciatis cumque fugit
-            repudiandae? Architecto, omnis?</h1>
-        <div class="flex justify-center h-full w-full ">
-            <TableObat />
+        <div class="flex justify-center h-full w-full">
+            <TabelTransaksi />
         </div>
     </div>
 </template>
 
 <script>
-import TableObat from '../../components/TableObat.vue'
+import TabelTransaksi from '../../components/TabelTransaksi.vue'
 
 export default {
     name: 'TransaksiPage',
     components: {
-        TableObat,
+        TabelTransaksi,
     }
 }
 </script>

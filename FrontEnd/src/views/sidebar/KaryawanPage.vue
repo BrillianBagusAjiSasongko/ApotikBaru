@@ -1,11 +1,8 @@
 <template>
     <div class="karyawanpage">
-<div class="m-4">
-        <div class="flex h-full w-full ">
-            
+        <div class="flex justify-center h-full w-full">
             <TableKaryawan />
         </div>
-    </div>
     </div>
 </template>
 

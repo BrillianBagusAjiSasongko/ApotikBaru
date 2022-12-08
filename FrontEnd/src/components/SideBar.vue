@@ -30,6 +30,10 @@
                     <div class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-white hover:text-black active:bg-white active:text-black focus:outline-none">
                         Contact And About
                     </div></RouterLink>
+                    <RouterLink to="/">
+                    <div class="no-underline not-italic font-normal text-base flex-row text-left rounded-lg w-52 box-border py-[12px] px-[10px] text-white hover:bg-white hover:text-black active:bg-white active:text-black focus:outline-none">
+                        Log Out
+                    </div></RouterLink>
                 </div>
             </div>
         </div>

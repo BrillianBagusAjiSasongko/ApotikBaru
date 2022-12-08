@@ -1,23 +1,28 @@
 <template>
-    <div class="flex gap-6">
-        <div v-for="stat in stats" class="flex flex-col p-4 w-1/3 bg-gray-900 rounded-lg gap-y-3">
-            <div class="flex items-center gap-x-3">
-                <div class="p-2 bg-gray-800 rounded-lg">
-                    <Component :is="stat.icon" />
-                </div>
-                <span class="text-xs font-medium"
-                    :class="stat.status === 'up' ? 'text-accent-green' : 'text-accent-red'">
-                    {{ stat.percentage }}
-                </span>
-                <div class="p-0.5 rounded-full"
-                    :class="stat.status === 'up' ? 'bg-accent-green/20' : 'bg-accent-red/20'">
-                    <ArrowUpIcon v-if="stat.status === 'up'" class="fill-current text-accent-green" />
-                    <ArrowDownIcon v-else class="fill-current text-accent-red" />
-                </div>
-            </div>
-            <div class="text-3xl font-semibold text-white">{{}}</div>
-            <div class="text-sm tracking-wide text-gray-500">{{}}</div>
-        </div>
+    <div class="flex flex-wrap justify-center m-3">
+        <h1
+            class="mb-4 mt-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">Selamat Datang!</h1>
+        <p class="mb-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">Berikut Beberapa Opsi Yang Bisa Membantu Anda</p>
+        <a href="#"
+            class="block max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Karyawan</h5>
+            <p class="font-normal text-gray-700">Silakan Klik Disini Untuk Menuju Halaman Data Karyawan/Staff Apotik</p>
+        </a>
+        <a href="#"
+            class="block max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Data Obat</h5>
+            <p class="font-normal text-gray-700">Silakan Klik Disini Untuk Menuju Halaman Data Obat Apotik</p>
+        </a>
+        <a href="#"
+            class="block max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Transaksi</h5>
+            <p class="font-normal text-gray-700">Silakan Klik Disini Untuk Menuju Halaman Data Transaksi Apotik</p>
+        </a>
+        <a href="#"
+            class="block max-w-sm m-2 p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">About & Contact</h5>
+            <p class="font-normal text-gray-700">Silakan Klik Disini Untuk Menuju Halaman About dan Kontak Apotik</p>
+        </a>
     </div>
 </template>
 
