@@ -1,9 +1,11 @@
 <script>
-export default{
-  name: 'AppBar',
-  }
+export default {
+    name: 'AppBar',
+}
 </script>
 
 <template>
-  <div><RouterView/></div>
+    <div>
+        <RouterView />
+    </div>
 </template>

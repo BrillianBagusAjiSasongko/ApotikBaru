@@ -1,19 +1,22 @@
 <template>
     <div class="mainapp">
         <div class="flex">
-            <SideBar />
-            <router-view/>
+            <aside class="h-screen sticky top-0">
+                <SideBar />
+            </aside>
+            <main>
+                <router-view />
+            </main>
         </div>
     </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import SideBar from '../components/SideBar.vue'
 
 export default {
     name: 'MainApp',
-    components:{
+    components: {
         SideBar
     }
 }

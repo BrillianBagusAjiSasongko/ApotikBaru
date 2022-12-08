@@ -1,27 +1,50 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MainApp from '../views/MainApp.vue'
 import LoginPage from '../views/LoginPage.vue'
-import DataObat from '../views/DataObat.vue'
+import MainApp from '../views/MainApp.vue'
+import DashboardPage from '../views/sidebar/DashboardPage.vue'
+import KaryawanPage from '../views/sidebar/KaryawanPage.vue'
+import ObatPage from '../views/sidebar/ObatPage.vue'
+import TransaksiPage from '../views/sidebar/TransaksiPage.vue'
+import AboutPage from '../views/sidebar/AboutPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    
     {
-      path: '/mainapp',
+      path: '/',
+      name: 'loginpage',
+      component: LoginPage,
+    },
+    {
+      path: '/dashboardpage',
       name: 'mainapp',
       component: MainApp,
-      children:[
+      children: [
         {
-          path: '/loginpage',
-          name: 'loginpage',
-          component: LoginPage,
+          path: '/dashboardpage',
+          name: 'dashboardpage',
+          component: DashboardPage,
         },
         {
-          path: '/dataobat',
-          name: 'dataobat',
-          component: DataObat,
-        }
+          path: '/karyawanpage',
+          name: 'karyawanpage',
+          component: KaryawanPage,
+        },
+        {
+          path: '/obatpage',
+          name: 'obatpage',
+          component: ObatPage,
+        },
+        {
+          path: '/transaksipage',
+          name: 'transaksipage',
+          component: TransaksiPage,
+        },
+        {
+          path: '/aboutpage',
+          name: 'aboutpage',
+          component: AboutPage,
+        },
       ]
     },
   ]
