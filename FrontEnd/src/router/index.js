@@ -16,7 +16,7 @@ const router = createRouter({
       component: LoginPage,
     },
     {
-      path: '/dashboardpage',
+      path: '/mainapp',
       name: 'mainapp',
       component: MainApp,
       children: [
